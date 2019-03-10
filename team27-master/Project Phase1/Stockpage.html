@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <title id="title">Pharo Stockpage</title>
+    <link rel="stylesheet" type="text/css" href="content/css/indexcss.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+</head>
+<body>
+	<nav class="nav1">
+		<div class="logo">
+			<a href="index.html"><img src="content/images/logo.png"></a>
+		</div>
+		<ul id="headerOption">
+			<li><a href="Stockpage.html" class="red">Stocks</a></li>
+			<li><a href="Mainpage.html">Home</a></li>
+			<li><a href="#" id="registerButton">Register</a></li>
+			<li><a href="#" id="loginButton">Login</a></li>
+		</ul>
+	</nav>
+
+ 	<div class='container'>
+
+
+	 		<div class='block chart1block' >
+	 			<h1 id="stockPageHeader1">Recommanded for you</h1>
+	 			<canvas id="myChart" width="400" height="200" class="col-sm-12 chart1"></canvas>
+	 			<div class= "chart1Options">
+	 				<div id="chart1search">
+	 					<input id='inputStock' type="text" placeholder="Input Stock Number">
+ 						<input id="searchbtn" type="submit" value="Search" onclick="searchByStockID('','')">
+ 						<input id="searchbtn" type="submit" value="Yearly" onclick="searchByStockID('','yearly')">
+ 						<input id="searchbtn" type="submit" value="Monthly" onclick="searchByStockID('','monthly')">
+ 						<input id="searchbtn" type="submit" value="Daily" onclick="searchByStockID('','daily')">
+ 						<input id="likebtn" type="submit" value="Like">
+	 				</div>
+	 				<div id="stockPageStockInfo">
+					 		
+					 				<div>
+					 					<span id="stockPagePortfolio1">Apple. Inc</span>
+					 		
+					 		
+					 					<span id="stockPagePortfolio2">AAPL</span>
+					 			
+					 			
+					 					<span id="stockPagePortfolio3">174.23</span>
+					 		
+					 					<span id="stockPagePortfolio4">1.26</span>
+					 				</div>
+						 			<button type="button" class="buttonsp">View in Portfolio</button>
+	 				</div>
+	 				
+	 			</div>
+	 		</div>
+	 		
+
+	 		<div class='block' id="postsReply"> <!-- My Posts & Replies section starts -->
+	 			<h2 class='secTitle'>My Posts & Replies</h2>
+	 		
+
+	 		
+	 		
+	 	</div> <!-- My Posts & Replies section starts -->
+
+	 	<div class='block' id="postsAdder">
+	 		<div class="makePost" id="makePost">	
+	 			<h2>Make a post</h2>
+	 				<div>
+	 					<textarea id="selfPost" name="Text1" cols="100" rows="5" placeholder="Please leave a post here"></textarea>
+	 				</div>
+	 				<div>
+	 					<input id="selfPostBtn" class="buttons" type="submit" value="Post" onclick="makeSelfPost()">
+	 				</div>
+	 		</div>
+	 	</div>
+
+
+
+	 	<div class="footer">
+				<p>copyright @Pharos Stock 2019</p>
+		</div>
+	</div>
+
+
+
+
+
+
+
+	 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	
+	 <script type="text/javascript" src="content/js/jsStylesheet.js"></script>
+
+</body>
+</html>
