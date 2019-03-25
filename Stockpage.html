@@ -13,10 +13,14 @@
 			<a href="index.html"><img src="content/images/logo.png"></a>
 		</div>
 		<ul id="headerOption">
-			<li><a href="Stockpage.html" class="red">Stocks</a></li>
-			<li><a href="Mainpage.html">Home</a></li>
-			<li><a href="#" id="registerButton">Register</a></li>
-			<li><a href="#" id="loginButton">Login</a></li>
+			<div id="neviSearch">
+	 					<input id='inputSearchBar' type="text" placeholder="Search here">
+ 						<input id="searchbtn" type="submit" value="Search" onclick="searchBarSearch()">
+ 			</div>
+			<li><a href="Mainpage.html" id="mainHomebtn" class="none" onclick="redMain()">Home</a></li>
+			<li><a href="Stockpage.html" class="red" id="stockHomebtn" >Stocks</a></li>
+			<li><a href="#" id="registerButton" onclick="redRegister()" class="none">Register</a></li>
+			<li><a href="#" id="loginButton" onclick="redLogin()" class="none">Login</a></li>
 		</ul>
 	</nav>
 
@@ -33,7 +37,7 @@
  						<input id="searchbtn" type="submit" value="Yearly" onclick="searchByStockID('','yearly')">
  						<input id="searchbtn" type="submit" value="Monthly" onclick="searchByStockID('','monthly')">
  						<input id="searchbtn" type="submit" value="Daily" onclick="searchByStockID('','daily')">
- 						<input id="likebtn" type="submit" value="Like">
+ 						<button id="likebtn" class="Like" onclick="likeBtnPressed()">Like</button>
 	 				</div>
 	 				<div id="stockPageStockInfo">
 					 		

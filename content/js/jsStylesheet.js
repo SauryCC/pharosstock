@@ -839,7 +839,10 @@ function Introduction(){
     document.getElementById("coverH1").innerText = "Pharos Trader Provides all Stock info";
     document.getElementById("coverP").innerText = "Pharos is a website that provides real time stock trading information, with discussions and recommandations made by professional stock traders. The Pharos Smart AI will automatically record and analyse your stock of interested and provided various aid for you."
     document.getElementById("coverP").style.fontSize = "20px";
-    document.getElementById("coverP").style.textAlign = "left"
+    document.getElementById("coverP").style.textAlign = "left";
+    document.getElementById("indexbtn").className = "none";
+    document.getElementById("introbtn").className = "red";
+    document.getElementById("infobtn").className = "none";
 }
 
 
@@ -847,6 +850,48 @@ function coverAboutUs(){
     document.getElementById("coverH1").innerText = "TEAM 27";
     document.getElementById("coverP").innerText = "Muyi Chen,   Kaiwen Ying,   Chang Liu,   Chunwei Cai "
     document.getElementById("coverP").style.textAlign = "center";
+    document.getElementById("coverP").style.fontSize = "20px";
+    document.getElementById("indexbtn").className = "none";
+    document.getElementById("introbtn").className = "none";
+    document.getElementById("infobtn").className = "red";
+}
+
+function resetCover(){
+    document.getElementById("coverH1").innerText = "Pharos Trader Provides all Stock info";
+    document.getElementById("coverP").innerText = "Designed specificly for you "
+    document.getElementById("coverP").style.textAlign = "center";
+    document.getElementById("coverP").style.fontSize = "30px";
+    document.getElementById("indexbtn").className = "red";
+    document.getElementById("introbtn").className = "none";
+    document.getElementById("infobtn").className = "none";
+}
+
+function redHome(){
+    document.getElementById("indexbtn").className = "red";
+    document.getElementById("introbtn").className = "none";
+    document.getElementById("infobtn").className = "none";
+}
+
+
+function redRegister(){
+    document.getElementById("registerButton").className = "red";
+    document.getElementById("mainHomebtn").className = "none";
+    document.getElementById("stockHomebtn").className = "none";
+    document.getElementById("loginButton").className = "none";
+}
+
+function redLogin(){
+    document.getElementById("loginButton").className = "red";
+    document.getElementById("stockHomebtn").className = "none";
+    document.getElementById("registerButton").className = "none";
+    document.getElementById("mainHomebtn").className = "none";
+}
+
+function redMain(){
+    document.getElementById("mainHomebtn").className = "red";
+    document.getElementById("loginButton").className = "none";
+    document.getElementById("stockHomebtn").className = "none";
+    document.getElementById("registerButton").className = "none";
 }
 
 
@@ -856,6 +901,61 @@ userConstruct('user2','user2');
 userConstruct('admin','admin');
 
 
+
+
+
+
+
+
+
+
+
+//functions to be done in phase 2
+
+//gets info from search bar and do something
+function searchBarSearch(){
+    //get input content 
+    const input = document.querySelector('#inputSearchBar').value;
+
+    if (input == ""){
+        document.getElementById("inputSearchBar").placeholder = "Empty input";
+    }
+    else{
+
+        //find if iput content is a stock number, if so, search by calling function:     searchByStockID()
+
+
+        //else
+    }
+
+    
+
+}
+
+
+//once the like button on stockpage is pressed
+function likeBtnPressed(){
+
+    //first check if user already liked this post before
+
+
+    try{
+            document.getElementById("likebtn").innerText = "Liked"
+            document.getElementById("likebtn").id = "likedbtn";
+        
+    }
+    catch(err){
+            document.getElementById("likedbtn").innerText = "Like"
+            document.getElementById("likedbtn").id = "likebtn";
+
+    }
+    //if not yet liked
+    
+
+
+
+    
+}
 
 
 

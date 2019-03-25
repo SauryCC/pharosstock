@@ -63,6 +63,8 @@ nav ul li a.red, nav ul li a:hover {
 }
 
 
+
+
 .nav1 {
 	position: fixed;
 	top: 0;
@@ -117,6 +119,23 @@ nav ul li a.red, nav ul li a:hover {
 	color: #fff;
 	background: #f00;
 	transition: .5s;
+}
+
+
+
+#neviSearch{
+	position:absolute;
+	left: 360px;
+}
+
+
+#neviSearch input{
+	border-radius: 5px;
+	margin-right: 20px;
+	color: #cc4560;
+	padding: 10px 35px;
+
+
 }
 
 
@@ -348,6 +367,7 @@ section div video {
   box-shadow: 2px 2px 2px 2px #666;
   transform: translateY(4px);
   color: white;
+  transition: .5s;
 }
 
 #likebtn:hover {
@@ -361,6 +381,39 @@ section div video {
   box-shadow: 2px 2px 2px 2px #666;
   transform: translateY(4px);
   color: white;
+  transition: .5s;
+}
+
+#likedbtn:hover {
+	background-color: #cc4560;
+    color: white;
+    transition: .5s;
+}
+
+#likebtn {
+	background-color: #DDDDDD;
+	border-radius: 5px;
+	margin-right: 20px;
+	color: #cc4560;
+	padding: 10px 35px;
+	transition: .5s;
+	
+}
+
+#likedbtn {
+	background-color: #cc4560;
+	border-radius: 5px;
+	margin-right: 20px;
+	color: white;
+	padding: 10px 35px;
+	transition: .5s;
+}
+
+#likedbtn:active {
+	background-color: #cc4560;
+	color: white;
+	transition: .5s;
+
 }
 
 #stockPageStockInfo{

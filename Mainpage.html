@@ -15,10 +15,14 @@
 			<a href="index.html"><img src="content/images/logo.png"></a>
 		</div>
 		<ul id="headerOption">
-			<li><a href="Mainpage.html" class="red" id="homeButton">Home</a></li>
-			<li><a href="Stockpage.html">Stock</a></li>
-			<li><a href="#" id="registerButton">Register</a></li>
-			<li><a href="#" id="loginButton">Login</a></li>
+			<div id="neviSearch">
+	 					<input id='inputSearchBar' type="text" placeholder="Search here">
+ 						<input id="searchbtn" type="submit" value="Search" onclick="searchBarSearch()">
+ 			</div>
+			<li><a href="Mainpage.html" id="mainHomebtn" class="red" onclick="redMain()">Home</a></li>
+			<li><a href="Stockpage.html" id="stockHomebtn" class="none">Stocks</a></li>
+			<li><a href="#" id="registerButton" onclick="redRegister()" class="none">Register</a></li>
+			<li><a href="#" id="loginButton" onclick="redLogin()" class="none">Login</a></li>
 		</ul>
 	</nav>
 
