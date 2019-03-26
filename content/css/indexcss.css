@@ -125,7 +125,8 @@ nav ul li a.red, nav ul li a:hover {
 
 #neviSearch{
 	position:absolute;
-	left: 360px;
+	left: 260px;
+	padding-top: 5px;
 }
 
 
@@ -133,10 +134,12 @@ nav ul li a.red, nav ul li a:hover {
 	border-radius: 5px;
 	margin-right: 20px;
 	color: #cc4560;
-	padding: 10px 35px;
+	padding: 5px 25px;
 
 
 }
+
+
 
 
 section div.videoContainer {
